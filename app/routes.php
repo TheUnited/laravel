@@ -12,15 +12,14 @@
 */
 
 
-Route::filter('admin', function()
+
+
+Route::get('/', function()
 {
-    return Redirect::to('/posts');
+    return 'Hello World';
 });
 
 
-Route::when('admin/*', 'admin', array('posts'));
-
- 
 Route::get('/posts','PostController@index');
  
  
@@ -30,7 +29,7 @@ Route::get('/posts/{id}','PostController@lire');
 Route::get('/posts/user/{id}','PostController@user');
 
 
-Route::get('admin/posts/add','PostController@add');
+Route::get('/posts/add','PostController@add');
 
 
 Route::get('/user/login','UserController@login');

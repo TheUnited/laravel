@@ -20,7 +20,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
- 
+   
        <a class="navbar-brand" href="#">MoufletteFamily</a>
       </div>
       <div class="navbar-collapse collapse navbar-responsive-collapse">
@@ -55,17 +55,37 @@
         </ul>
       </div>
     </div>
- 
- 
-    <div class="container">
- 
-          @yield('content')
- 
-    </div> <!-- /container -->
- 
- 
- 
   
- 
+  
+  <!-- container-->
+   
+  
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="panel panel-default">          
+     
+            @yield('content')
+          
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">Menu</div>
+            <div class="panel-body">
+
+              <a href="#">Action</a><br>
+              <a href="#">Another action</a><br>
+              <a href="#">Something else here</a><br>
+              <a href="#">Separated link</a><br>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+  
+   
   </body>
 </html>

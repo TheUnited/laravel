@@ -5,7 +5,7 @@ class PostController extends BaseController {
 	public function __construct()
 	{
  
-
+		$this->beforeFilter('auth', array('only' => 'index','logout'));
 		$this->beforeFilter('csrf', array('on' => 'post'));
  
 	}
@@ -47,7 +47,7 @@ class PostController extends BaseController {
  
 	public function add()
 	{
-		return View::make('posts.user')->with('user',$user);
+		return 'hello' ;
 
 	}
  

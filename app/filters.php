@@ -35,11 +35,8 @@ App::after(function($request, $response)
 
 Route::filter('auth', function()
 {
-	
-});
-Route::filter('admin', function()
-{
-    if(!Auth::check()) return Redirect::to('/posts');
+	if (Auth::check()) return Redirect::to('/user/login');
+		
 });
 
 Route::filter('auth.basic', function()
