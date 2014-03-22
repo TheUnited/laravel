@@ -15,7 +15,7 @@
 App::filter('admin',function(){
 	
 	if(!Auth::check()) return 'Access denied';	
-})
+});
 
 App::before(function($request)
 {
