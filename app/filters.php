@@ -12,7 +12,7 @@
 */
 
 
-App::filter('admin',function(){
+Route::filter('admin',function(){
 	
 	if(!Auth::check()) return 'Access denied';	
 });
