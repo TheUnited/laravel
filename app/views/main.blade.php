@@ -7,13 +7,16 @@
  
     <!-- Le styles -->
     <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
     <style>
       body {
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
       }
     </style>
+  
   <body>
-    <div class="navbar navbar-default navbar-fixed-top">
+   <div class="navbar navbar-default navbar-fixed-top">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
           <span class="icon-bar"></span>
@@ -25,30 +28,20 @@
       </div>
       <div class="navbar-collapse collapse navbar-responsive-collapse">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Active</a></li>
-          <li><a href="#">Link</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li class="divider"></li>
-              <li class="dropdown-header">Dropdown header</li>
-              <li><a href="#">Separated link</a></li>
-              <li><a href="#">One more separated link</a></li>
-            </ul>
-          </li>
+          <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+          <li><a href="#"><i class="fa fa-file-text-o"></i> News</a></li>
+          <li><a href="#"><i class="fa fa-film"></i> Vidéos</a></li>
+          <li><a href="#"><i class="fa fa-users"></i> Player</a></li>
+          <li><a href="#"><i class="fa fa-list-alt"></i> Forum</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Link</a></li>
+          <li><a href="#">Home</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
             <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li class="divider"></li>
+              <li><a href="#"><i class="glyphicon-glass"></i>Home</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Vidéos</a></li>
               <li><a href="#">Separated link</a></li>
             </ul>
           </li>
@@ -74,10 +67,11 @@
             <div class="panel-heading">Menu</div>
             <div class="panel-body">
 
-              <a href="#">Action</a><br>
-              <a href="#">Another action</a><br>
-              <a href="#">Something else here</a><br>
-              <a href="#">Separated link</a><br>
+              <a href="#"><i class="fa fa-home"></i> Home</a><br>
+              <a href="#"><i class="fa fa-file-text-o"></i> News</a><br>
+              <a href="#"><i class="fa fa-film"></i> Vidéos</a><br>
+              <a href="#"><i class="fa fa-users"></i> Player</a><br>
+              <a href="#"><i class="fa fa-list-alt"></i> Forum</a><br>
 
             </div>
           </div>

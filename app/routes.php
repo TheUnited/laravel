@@ -29,7 +29,7 @@ Route::get('/posts/{id}','PostController@lire');
 Route::get('/posts/user/{id}','PostController@user');
 
 
-Route::get('/posts/add', array('before' => 'auth','uses' => 'PostController@add'));
+Route::get('/posts/add','PostController@add');
 
 
 Route::get('/user/login','UserController@login');

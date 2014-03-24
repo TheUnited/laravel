@@ -10,11 +10,9 @@
 | application. Here you may also register your custom route filters.
 |
 */
-
-
-Route::filter('admin',function(){
-	
-	if(!Auth::check()) return 'Access denied';	
+Route::filter('auth', function()
+{
+    if (!Auth::guest()) return Redirect::guest('/user/login');
 });
 
 App::before(function($request)
@@ -39,11 +37,7 @@ App::after(function($request, $response)
 |
 */
 
-Route::filter('auth', function()
-{
-	if (Auth::check()) return Redirect::to('/user/login');
-		
-});
+
 
 Route::filter('auth.basic', function()
 {

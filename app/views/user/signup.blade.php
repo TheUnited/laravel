@@ -17,26 +17,27 @@
 		<div class="form-group">
 		
 		{{Form::label('Login', 'Votre Login')}}
-		{{Form::text('Login', 'Login', array('class'=>'form-control', 'placeholder'=>'Votre Login'))}}
+		{{Form::text('Login', 'Login', array('class'=>'form-control'))}}
 		
 		<br>
 
 		{{Form::label('Email', 'Votre Email')}}
-		{{Form::text('email', 'email@host.com', array('class'=>'form-control', 'placeholder'=>'Votre Email'))}}
+		{{Form::text('email', 'email@host.com', array('class'=>'form-control',))}}
 		
 		<br>
 		
 		{{Form::label('password', 'Votre Password')}}
-		{{Form::password('password', array('class'=>'form-control'))}}
+		{{Form::password('password', array('class'=>'form-control' , 'placeholder'=>'Password'))}}
 
 		<br>
 		
 		{{Form::label('password2', 'Répétez Votre Password')}}
-		{{Form::password('Password2', array('class'=>'form-control'))}}
+		{{Form::password('Password2', array('class'=>'form-control' , 'placeholder'=>'Password'))}}
 
 			<br>
 
 		{{Form::submit('Envoyer', array('class'=>'btn btn-success'))}}
+		
 
 		</div>
 	</fieldset>
