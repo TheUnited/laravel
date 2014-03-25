@@ -6,7 +6,7 @@
 
 @foreach($user->posts as $p)
 
-<div class="panel panel-info">
+<div class="panel panel-default">
   <div class="panel-heading">
     <h2 class="panel-title">{{$p->title}}</h2>
   </div>

@@ -5,7 +5,7 @@
 @if($post)
 
  
-<div class="panel panel-info">
+<div class="panel panel-default">
   <div class="panel-heading">
     <h2 class="panel-title">{{$post->title}}</h2>
   </div>

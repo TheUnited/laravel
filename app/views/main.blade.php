@@ -78,8 +78,12 @@
         </div>
       </div>
     </div>
-   
-  
+    <div class="navbar navbar-default navbar-fixed-bottom">
+      <div class="navbar-header">
+ 
+       <a class="navbar-brand" href="#">© MoufletteFamily.com | All right reserved.</a>
+      </div>
    
   </body>
+
 </html>

@@ -5,8 +5,8 @@ class PostController extends BaseController {
 	public function __construct()
 	{
  
-		$this->beforeFilter('auth', array('only' => 'index','logout'));
-		$this->beforeFilter('csrf', array('on' => 'post'));
+		$this->beforeFilter('guest', array('only' => 'index','logout'));
+		$this->beforeFilter('csrf', array('on' => 'posts'));
  
 	}
  

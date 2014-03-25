@@ -5,8 +5,8 @@ class UserController extends BaseController {
 	public function __construct()
 	{
 		
-		$this->beforeFilter('auth', array('only' => 'comment','add'));
-		$this->beforeFilter('csrf', array('on' => 'post'));
+		$this->beforeFilter('guest', array('only' => 'comment','add'));
+		$this->beforeFilter('csrf', array('on' => 'posts'));
 
 	}
 

@@ -10,10 +10,7 @@
 | application. Here you may also register your custom route filters.
 |
 */
-Route::filter('auth', function()
-{
-    if (!Auth::guest()) return Redirect::guest('/user/login');
-});
+
 
 App::before(function($request)
 {
@@ -38,6 +35,10 @@ App::after(function($request, $response)
 */
 
 
+Route::filter('auth', function()
+{
+    if (Auth::guest()) return Redirect::guest('/user/login');
+});
 
 Route::filter('auth.basic', function()
 {
