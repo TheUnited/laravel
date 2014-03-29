@@ -1,10 +1,10 @@
 <?php
 
-class PostController extends BaseController {
-
+class AdminController extends BaseController {
 
 	public function index()
 	{
+
 		return View::make('posts.index');
 	}
 

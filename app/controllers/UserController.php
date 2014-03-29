@@ -2,14 +2,6 @@
 
 class UserController extends BaseController {
 
-	public function __construct()
-	{
-		
-		$this->beforeFilter('guest', array('only' => 'comment','add'));
-		$this->beforeFilter('csrf', array('on' => 'posts'));
-
-	}
-
 	public function index()
 	{
 
@@ -20,7 +12,7 @@ class UserController extends BaseController {
 	public function login()
 	{
 
-		return View::make("/user/login")
+		return View::make("/user/login");
 	}
 
 	public function signup()

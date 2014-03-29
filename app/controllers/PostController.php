@@ -2,20 +2,11 @@
  
 class PostController extends BaseController {
  
-	public function __construct()
-	{
- 
-		$this->beforeFilter('guest', array('only' => 'index','logout'));
-		$this->beforeFilter('csrf', array('on' => 'posts'));
- 
-	}
- 
 	public function index()
 	{
 		$posts = Post::all();		
 
- 
-		return View::make('posts.index')->with('posts',$posts);
+ 		return View::make('posts.index')->with('posts',$posts);
  
 	}
  
@@ -38,6 +29,13 @@ class PostController extends BaseController {
 		return View::make('posts.user')->with('user',$user);
  
 	}
+
+	public function add()
+	{
+		return View::make('posts.add');
+
+	}
+ 
  
 	public function comment()
 	{
@@ -45,10 +43,5 @@ class PostController extends BaseController {
  
 	}
  
-	public function add()
-	{
-		return 'hello' ;
 
-	}
- 
 }

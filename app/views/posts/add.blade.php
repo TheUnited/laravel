@@ -3,13 +3,13 @@
 @section('content')
 
 
-
+ 
 {{ Form::open(array('user/signup' => 'well bs-component')) }}
 
 {{ Form::token() }}
 
 <div class="panel panel-default">
-  <div class="panel-heading">Inscription</div>
+  <div class="panel-heading">Ajouter Un Article</div>
   	<div class="panel-body">
 
 		<form class="form-horizontal">
@@ -47,8 +47,6 @@
 </div>
 
 {{ Form::close() }}
-
-
 
 
 @stop
